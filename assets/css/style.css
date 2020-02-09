@@ -1,0 +1,75 @@
+body {
+  background-color: turquoise;
+  background-image: url("../images/repeated-square/repeated-square.png");
+  background-size: auto;
+  background-repeat: repeat;
+  z-index: -1;
+  object-position: center;
+}
+
+h1 {
+  margin: 20px;
+  font-weight: bold;
+  font-size: larger;
+  padding: 20px;
+  width: fit-content;
+  background-color: orchid;
+  color: white;
+}
+
+p {
+  padding: 5px;
+}
+
+#instructions {
+  color: green;
+  background-color: gold;
+  margin: 20px;
+  padding: 5px;
+  width: fit-content;
+}
+
+#random-number {
+  float: left;
+  color: orchid;
+  font-size: larger;
+  background-color: green;
+  margin: 20px;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+#scoreboard {
+  float: left;
+  background-color: cyan;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+#total-score {
+  margin: 20px;
+  width: 100px;
+  height: fit-content;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+}
+
+#Score {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+}
