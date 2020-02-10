@@ -5,6 +5,10 @@
     <title>Crystal Collector Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <script src="assets/javascript/game.js"></script>
   </head>
 
@@ -35,35 +39,35 @@
     <div id="random-number"></div>
 
     <div id="scoreboard">
-      <p>Wins:</p>
-      <p>Losses:</p>
+      <p id="wins">Wins: 0</p>
+      <p id="losses">Losses: 0</p>
     </div>
 
     <div style="clear: both;"></div>
 
     <div id="icon-container">
-      <div class="icon">
+      <div id="icon1">
         <img
           src="assets/images/NicePng_diamond-shape-png_174478.png"
           alt="gem1"
         />
       </div>
 
-      <div class="icon">
+      <div id="icon2">
         <img
           src="assets/images/NicePng_emerald-gem-png_4147063.png"
           alt="gem2"
         />
       </div>
 
-      <div class="icon">
+      <div id="icon3">
         <img
           src="assets/images/NicePng_red-diamond-png_1230899.png"
           alt="gem3"
         />
       </div>
 
-      <div class="icon">
+      <div id="icon4">
         <img
           src="assets/images/NicePng_yellow-diamond-png_1188740.png"
           alt="gem4"
@@ -77,6 +81,6 @@
       <p>Your total score is:</p>
     </div>
 
-    <div id="Score"></div>
+    <div id="score"></div>
   </body>
 </html>
