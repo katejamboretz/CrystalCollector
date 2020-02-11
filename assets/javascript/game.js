@@ -118,7 +118,7 @@ $(document).ready(function() {
       parseInt($("#random-number").attr("data-number"))
     ) {
       win++;
-      $("#win").text("Wins: " + win);
+      $("#wins").text("Wins: " + win);
       $("#icon1").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
       $("#icon2").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
       $("#icon3").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
