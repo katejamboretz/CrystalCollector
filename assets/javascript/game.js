@@ -37,7 +37,7 @@ $(document).ready(function() {
   );
   $("#random-number").text($("#random-number").attr("data-number"));
   $("#score").attr("data-sum", 0);
-  $("#score").text($("score").attr("data-sum"));
+  $("#score").text($("#score").attr("data-sum"));
 
   // make on click events for each gem which add its value to the score value
 
@@ -48,8 +48,9 @@ $(document).ready(function() {
         parseInt($("#score").attr("data-sum"))
     );
     console.log($("score").attr("data-sum"));
-    $("#score").text($("score").attr("data-sum"));
-    console.log($("score").attr("data-sum"));
+    $("#score").text($("#score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    gamereset();
   });
 
   $("#icon2").on("click", function() {
@@ -58,9 +59,10 @@ $(document).ready(function() {
       parseInt($("#icon2").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("score").attr("data-sum"));
-    $("#score").text($("score").attr("data-sum"));
-    console.log($("score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    $("#score").text($("#score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    gamereset();
   });
 
   $("#icon3").on("click", function() {
@@ -69,9 +71,10 @@ $(document).ready(function() {
       parseInt($("#icon3").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("score").attr("data-sum"));
-    $("#score").text($("score").attr("data-sum"));
-    console.log($("score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    $("#score").text($("#score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    gamereset();
   });
 
   $("#icon4").on("click", function() {
@@ -80,50 +83,53 @@ $(document).ready(function() {
       parseInt($("#icon4").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("score").attr("data-sum"));
-    $("#score").text($("score").attr("data-sum"));
-    console.log($("score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    $("#score").text($("#score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
+    gamereset();
   });
 
   // make an if else function for when score = random number (add to win, reset random number, score and gem numbers)...
   //    score < random number (do nothing)
   //    score > random number (add to loss, reset random number, score and gem numbers)
 
-  if (
-    parseInt($("score").attr("data-sum")) >
-    parseInt($("#random-number").attr("data-number"))
-  ) {
-    losses++;
-    $("losses").text("Losses: " + losses);
-    $("#icon1").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon2").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon3").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon4").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#random-number").attr(
-      "data-number",
-      randomNumberArray[Math.floor(Math.random() * 119)]
-    );
-    $("#random-number").text($("#random-number").attr("data-number"));
-    $("#score").attr("data-sum", 0);
-    $("#score").text($("score").attr("data-sum"));
-  }
+  function gamereset() {
+    if (
+      parseInt($("#score").attr("data-sum")) >
+      parseInt($("#random-number").attr("data-number"))
+    ) {
+      losses++;
+      $("#losses").text("Losses: " + losses);
+      $("#icon1").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon2").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon3").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon4").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#random-number").attr(
+        "data-number",
+        randomNumberArray[Math.floor(Math.random() * 119)]
+      );
+      $("#random-number").text($("#random-number").attr("data-number"));
+      $("#score").attr("data-sum", 0);
+      $("#score").text($("#score").attr("data-sum"));
+    }
 
-  if (
-    parseInt($("score").attr("data-sum")) ===
-    parseInt($("#random-number").attr("data-number"))
-  ) {
-    win++;
-    $("win").text("Wins: " + win);
-    $("#icon1").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon2").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon3").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#icon4").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
-    $("#random-number").attr(
-      "data-number",
-      randomNumberArray[Math.floor(Math.random() * 119)]
-    );
-    $("#random-number").text($("#random-number").attr("data-number"));
-    $("#score").attr("data-sum", 0);
-    $("#score").text($("score").attr("data-sum"));
+    if (
+      parseInt($("#score").attr("data-sum")) ===
+      parseInt($("#random-number").attr("data-number"))
+    ) {
+      win++;
+      $("#win").text("Wins: " + win);
+      $("#icon1").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon2").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon3").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#icon4").attr("data-number", gemArray[Math.floor(Math.random() * 12)]);
+      $("#random-number").attr(
+        "data-number",
+        randomNumberArray[Math.floor(Math.random() * 119)]
+      );
+      $("#random-number").text($("#random-number").attr("data-number"));
+      $("#score").attr("data-sum", 0);
+      $("#score").text($("#score").attr("data-sum"));
+    }
   }
 });
