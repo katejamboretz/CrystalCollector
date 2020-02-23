@@ -47,7 +47,7 @@ $(document).ready(function() {
       parseInt($("#icon1").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("score").attr("data-sum"));
+    console.log($("#score").attr("data-sum"));
     $("#score").text($("#score").attr("data-sum"));
     console.log($("#score").attr("data-sum"));
     gamereset();
