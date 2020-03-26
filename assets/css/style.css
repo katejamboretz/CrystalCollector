@@ -32,18 +32,18 @@ p {
 #random-number {
   float: left;
   color: orchid;
-  font-size: larger;
+  font-size: 120px;
   background-color: green;
   margin: 20px;
   padding: 5px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 img {
   float: left;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   margin: 20px;
 }
 
@@ -52,24 +52,27 @@ img {
   background-color: cyan;
   padding: 5px;
   margin: 20px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
 }
 
 #total-score {
   margin: 20px;
-  width: 100px;
+  width: 200px;
   height: fit-content;
   padding: 5px;
   background-color: teal;
   color: white;
+  font-size: 30px;
 }
 
 #score {
   margin: 20px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   padding: 5px;
   background-color: teal;
   color: white;
+  font-size: 120px;
 }

@@ -47,9 +47,7 @@ $(document).ready(function() {
       parseInt($("#icon1").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("#score").attr("data-sum"));
     $("#score").text($("#score").attr("data-sum"));
-    console.log($("#score").attr("data-sum"));
     gamereset();
   });
 
@@ -59,9 +57,7 @@ $(document).ready(function() {
       parseInt($("#icon2").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("#score").attr("data-sum"));
     $("#score").text($("#score").attr("data-sum"));
-    console.log($("#score").attr("data-sum"));
     gamereset();
   });
 
@@ -71,9 +67,7 @@ $(document).ready(function() {
       parseInt($("#icon3").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("#score").attr("data-sum"));
     $("#score").text($("#score").attr("data-sum"));
-    console.log($("#score").attr("data-sum"));
     gamereset();
   });
 
@@ -83,9 +77,7 @@ $(document).ready(function() {
       parseInt($("#icon4").attr("data-number")) +
         parseInt($("#score").attr("data-sum"))
     );
-    console.log($("#score").attr("data-sum"));
     $("#score").text($("#score").attr("data-sum"));
-    console.log($("#score").attr("data-sum"));
     gamereset();
   });
 
